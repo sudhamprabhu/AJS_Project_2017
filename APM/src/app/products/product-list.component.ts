@@ -3,4 +3,6 @@
    selector: 'pm-products',
    templateUrl: 'app/products/product-list.component.html'
  })
- export class ProductListComponent {}
+ export class ProductListComponent {
+     pageTittle: string ="Product List!"
+ }
