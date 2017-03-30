@@ -42,7 +42,7 @@
                        </th>
                    </tr>
                </thead>
-               <tbody *ngForIn='let product for products'>
+               <tbody *ngFor='let product of products'>
                    <td>{{product.imageUrl}}</td>
                    <td>{{product.productName}}</td>
                    <td>{{product.productCode}}</td>
