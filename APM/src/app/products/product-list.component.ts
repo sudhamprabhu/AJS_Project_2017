@@ -5,6 +5,10 @@
  })
  export class ProductListComponent {
      pageTittle: string ="Product List!";
+     imageWidth:number=20;
+     imageSize:number=50;
+     showImage:Boolean=false;
+     listFilter:string='cart';
      products:any[]=  [{
         "productId": 1,
         "productName": "Leaf Rake",
@@ -24,5 +28,9 @@
         "price": 32.99,
         "starRating": 4.2,
         "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-    }]
+    }];
+
+    toggleImage():void {
+        this.showImage = !this.showImage
+    }
  }
