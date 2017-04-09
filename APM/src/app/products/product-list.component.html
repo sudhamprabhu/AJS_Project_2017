@@ -43,8 +43,8 @@
                        </th>
                    </tr>
                </thead>
-               <tbody *ngFor='let product of products'>                 
-                   <td>{{product.imageUrl}}<img  *ngIf='showImage' src={{product.imageUrl}} title={{product.productName}} [style.width.px]='imageWidth' style.margin.px='imageSize'></td>
+               <tbody *ngFor='let product of products|productFilter:listFilter '>                 
+                   <td><img  *ngIf='showImage' src={{product.imageUrl}} title={{product.productName}} [style.width.px]='imageWidth' style.margin.px='imageSize'></td>
                    <td>{{product.productName | lowercase}}</td>
                    <td>{{product.productCode}}</td>
                    <td>{{product.releaseDate}}</td>

@@ -6,7 +6,7 @@
         "**/.hg": true,
         "**/.DS_Store": true,
         "**/app/**/*.map": false,
-        "**/app/**/*.js.map": true
+       "**/app/**/*.js.map": true
     },
     "files.autoSave": "afterDelay"
 }
